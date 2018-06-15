@@ -34,4 +34,9 @@ public class Paciente {
         this.id = id;
         this.numeroSus = numeroSus;
     }
+
+    @Override
+    public String toString() {
+        return "Paciente{" + "id=" + id + ", numeroSus=" + numeroSus + ", responsavel=" + responsavel + '}';
+    }
 }

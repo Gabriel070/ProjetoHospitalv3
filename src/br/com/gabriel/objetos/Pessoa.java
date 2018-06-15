@@ -3,7 +3,7 @@ package br.com.gabriel.objetos;
 
 import java.util.Date;
 
-public class Pessoa {
+public abstract class Pessoa {
     private String nome;
     private Date dataNascimento;
     private String cpf;
@@ -86,5 +86,10 @@ public class Pessoa {
         this.telefone = telefone;
         this.estadoCivil = estadoCivil;
         this.sexo = sexo;
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" + "nome=" + nome + ", dataNascimento=" + dataNascimento + ", cpf=" + cpf + ", rg=" + rg + ", endereco=" + endereco + ", telefone=" + telefone + ", estadoCivil=" + estadoCivil + ", sexo=" + sexo + '}';
     }
 }

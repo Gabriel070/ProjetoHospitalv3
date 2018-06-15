@@ -9,6 +9,10 @@ public class Atestado {
     private Consulta consulta;
     private int quantidadeDias;
 
+    public Atestado() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public Date getDataInicioDoAtestado() {
         return dataInicioDoAtestado;
     }
@@ -46,5 +50,10 @@ public class Atestado {
         this.dataFimDoAtestado = dataFimDoAtestado;
         this.consulta = consulta;
         this.quantidadeDias = quantidadeDias;
-    }   
+    }
+
+    @Override
+    public String toString() {
+        return "Atestado{" + "dataInicioDoAtestado=" + dataInicioDoAtestado + ", dataFimDoAtestado=" + dataFimDoAtestado + ", consulta=" + consulta + ", quantidadeDias=" + quantidadeDias + '}';
+    }
 }
